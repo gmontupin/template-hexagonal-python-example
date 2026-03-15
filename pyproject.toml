@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Service-healt-monitor"
-version = "0.1.0"
+version = "0.2.0"
 description = "Monitor de salud de servicios externos usando Arquitectura Hexagonal"
 authors = ["Gustavo Montupin Villanueva <gmontupin@gmail.com>"]
 license = "MIT"
