@@ -1,0 +1,72 @@
+# --- Entorno Operativo y Archivos Temporales ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+*.tmp
+*.bak
+*.tmp.*
+
+# --- Seguridad: Credenciales y Secretos (ESTRICTO) ---
+# Bloqueo total de cualquier archivo que pueda contener llaves, contraseñas o tokens
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.asc
+*.gpg
+*.json
+*.csv
+# Bloqueo explícito de configuraciones de autenticación de nube
+gcloud/
+.gcloud/
+google-cloud-sdk/
+# Bloqueo de archivos de variables de entorno (Cualquier formato)
+.env*
+!/.env.example
+secrets/
+config/local.*
+*.secret
+
+# --- Python & Dependency Management ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+# Poetry lock files son necesarios, pero las carpetas de virtualenv NO
+!poetry.lock
+!pyproject.toml
+
+# --- Infraestructura y Cloud ---
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+*.tfvars
+*.tfvars.json
+# Bloqueo de logs de despliegue que puedan contener trazas de ejecución
+*.log
+*.out
+
+# --- VS Code (Permitimos solo la configuración necesaria) ---
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# --- Artefactos de Build y Distribución ---
+dist/
+build/
+*.egg-info/
+*.whl

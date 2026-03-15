@@ -1,0 +1,13 @@
+version: 2
+updates:
+  - package-ecosystem: "pip" # Dependabot usa 'pip' para manejar pyproject.toml
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    # Esto le dice a Dependabot que busque pyproject.toml y poetry.lock
+    versioning-strategy: "lockfile-only"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"

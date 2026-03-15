@@ -1,0 +1,7 @@
+# .mise.toml
+[tools]
+python = "3.12.0"
+poetry = "1.8.0"
+
+[env]
+PYTHONPATH = "."
